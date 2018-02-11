@@ -10,7 +10,6 @@
    <link rel="icon" type="image/png" href="assets/images/apple-touch-icon-57x57.png">
    <!-- Latest compiled and minified CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
    <!-- Optional theme -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -18,8 +17,9 @@
    <link rel="stylesheet" type="text/css" href="css/main.css">
  </head>
 <body>
+  <!--Header-->
   <header>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-lab navbar-fixed-top">
      <div class="container-fluid background-color-nav">
        <!-- Brand and toggle get grouped for better mobile display -->
        <div class="navbar-header">
@@ -29,234 +29,209 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <div class="col-xs-6">
-           <a class="navbar-brand" href="#">
-             <img src="assets/images/logo.png" alt="Laboratoria" class="img-responsive">
-           </a>
-         </div>
+         <a class="navbar-brand pull-left" href="#">
+           <img src="assets/images/logo.png" alt="Laboratoria" class="logo-lab">
+         </a>
        </div>
 
        <!-- Collect the nav links, forms, and other content for toggling -->
-       <div class="col-xs-12">
-         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <form class="navbar-form navbar-left">
-             <div class="form-group">
-               <input type="text" class="form-control" placeholder="Search">
-             </div>
-           </form>
-           <ul class="nav navbar-nav navbar-right">
-             <li><a href="#" class="col-xs-3"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-             <li><a href="#"><img src="assets/images/ale.png" alt="" class="img-responsive col-xs-2 img-circle"></a></li>
-           </ul>
-         </div>
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+           <li><a href="#"><img src="assets/images/ale.png" alt="" class="logo-ale img-circle"></a></li>
+         </ul>
        </div>
      </div>
      <!-- /.container-fluid -->
    </nav>
   </header>
-  <div class="container-fluid style-container-bottom">
-    <ul class="nav nav-tabs nav-justified">
-      <li role="presentation" class="active col-xs-4"><a href="#">Overview</a></li>
-      <li role="presentation" class="col-xs-4"><a href="#">Students</a></li>
-      <li role="presentation" class="col-xs-4"><a href="#">Teachers</a></li>
-    </ul>
-   </div>
-    <!--Left side column-->
-    <aside>
-      <div class="container-fluid">
+
+  <!--Left side column-->
+  <aside class="col-sm-4 col-lg-3 margin-top-99">
+    <div class="container-fluid">
+      <div class="row flex-direction-box">
+        <div class="col-xs-5 padding-top-4">
+            <img src="assets/images/ale.png" alt="" class="img-responsive img-circle">
+        </div>
+        <div class="col-xs-7">
+          <h2 class="text-center text-white">Alejandra</h2>
+          <h3 class="text-center text-white">Training Manager</h3>
+          <span class="icon-map-marker"></span><h4 class="text-center text-white">Lima</h4>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label class="text-white" for="sel1">Sede-Promoción</label>
+            <select class="form-control" id="sel1">
+              <optgroup label="Lima">
+                <option value="2"><span>Lima</span> 2017-2</option>
+                <option value="0"><span>Lima</span> 2017-1</option>
+                <option value="1"><span>Lima</span> 2016-1</option>
+              </optgroup>
+              <optgroup label="Arequipa">
+                <option value="3"><span>Arequipa</span> 2017-1</option>
+                <option value="4"><span>Arequipa</span> 2016-2</option>
+              </optgroup>
+              <optgroup label="Chile">
+                <option value="5"><span>Chile</span> 2017-2</option>
+                <option value="6"><span>Chile</span> 2017-1</option>
+                <option value="7"><span>Chile</span> 2016-1</option>
+              </optgroup>
+              <optgroup label="Mexico">
+                <option value="8"><span>Mexico</span> 2017-2</option>
+                <option value="9"><span>Mexico</span> 2017-1</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!--Contenido de la Página-->
+  <section class="col-sm-8 col-sm-offset-4  col-lg-9 col-lg-offset-3 padding-0">
+      <div class="container-fluid style-box-yellow">
         <div class="row">
           <div class="col-xs-12">
-            <div class="col-xs-5 padding-top-4">
-                <img src="assets/images/ale.png" alt="" class="img-responsive img-circle">
-            </div>
-            <div class="col-xs-7">
-              <h2 class="text-center text-white">Alejandra</h2>
-              <h3 class="text-center text-white">Training Manager</h3>
-              <span class="icon-map-marker"></span><h4 class="text-center text-white">Lima</h4>
-            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active col-xs-4 padding-0 text-center"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+              <li role="presentation" class="col-xs-4 padding-0 text-center"><a href="#students" aria-controls="students" role="tab" data-toggle="tab">Students</a></li>
+              <li role="presentation" class="col-xs-4 padding-0 text-center"><a href="#teachers" aria-controls="teachers" role="tab" data-toggle="tab">Teachers</a></li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="container-fluid">
+        <br>
         <div class="row">
           <div class="col-xs-12">
-            <div class="form-group">
-              <label class="text-white" for="sel1">Sede-Promoción</label>
-              <select class="form-control" id="sel1">
-                <optgroup label="Lima">
-                  <option value="2"><span>Lima</span> 2017-2</option>
-                  <option value="0"><span>Lima</span> 2016-2</option>
-                  <option value="1"><span>Lima</span> 2017-1</option>
-                </optgroup>
-                <optgroup label="Arequipa">
-                  <option value="3"><span>Arequipa</span> 2016-2</option>
-                  <option value="4"><span>Arequipa</span> 2017-1</option>
-                </optgroup>
-                <optgroup label="Chile">
-                  <option value="5"><span>Chile</span> 2016-2</option>
-                  <option value="6"><span>Chile</span> 2017-1</option>
-                  <option value="7"><span>Chile</span> 2017-2</option>
-                </optgroup>
-                <optgroup label="Mexico">
-                  <option value="8"><span>Mexico</span> 2017-1</option>
-                  <option value="9"><span>Mexico</span> 2017-2</option>
-                </optgroup>
-              </select>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="overview">
+                <div class="row">
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Enrollment</h1>
+                        <div class="number-box text-center">
+                          <p id="total"></p># Students currently enrolled
+                          <p id="porcentaje"></p>% Dropout
+                        </div>
+                        <div class="box-google-charts">
+                          <div id="chart_div_enrollment"></div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Achievement</h1>
+                      <div class="number-box text-center">
+                        <p id="meta"></p># Students that meet the target
+                        <p id="prctmeta"></p>% Of total
+                      </div>
+                      <div class="box-google-charts">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Net promoter score</h1>
+                      <div class="number-box text-center">
+                        <p id="nps"></p>% Acumulative nps
+                        <p id="nps-porciento"></p>Porcentajes
+                      </div>
+                      <div class="box-google-charts">
+
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-lg-6">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">TECH SKILLS</h1>
+                        <select class="form-control" id="sel2">
+                            <option value="0">Sprint 1</option>
+                            <option value="1">Sprint 2</option>
+                            <option value="2">Sprint 3</option>
+                            <option value="3">Sprint 4</option>
+                        </select>
+                        <div class="number-box text-center">
+                          <p id="totalTechSprint"></p># Students that meet the target
+                          <p id="prctTechSprint"></p>% Of total
+                        </div>
+                        <div class="box-google-charts">
+
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-6">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">LIFE SKILL</h1>
+                        <select class="form-control" id="sel3">
+                          <option value="0">Sprint 1</option>
+                          <option value="1">Sprint 2</option>
+                          <option value="2">Sprint 3</option>
+                          <option value="3">Sprint 4</option>
+                        </select>
+                      <div class="number-box text-center">
+                        <p id="totalHseSprint"></p># Overall class average
+                        <p id="prctHseSprint"></p>% Of students that meet the target
+                      </div>
+                      <div class="box-google-charts">
+
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Student satifaction</h1>
+                      <div class="number-box text-center">
+                        <p id="box-expectativa"></p>% Meeting of excceding expectations
+                      </div>
+                      <div class="box-google-charts">
+
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Teacher rating</h1>
+                      <div class="number-box text-center">
+                         <p id="box-teacher"></p>Overall teacher rating</div>
+                      <div class="box-google-charts">
+
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-lg-4">
+                    <a href="#" class="thumbnail">
+                      <h1 class="text-center">Jedi master rating</h1>
+                      <div class="number-box text-center">
+                        <p id="box-jedi"></p>Overall jedi rating</div>
+                      <div class="box-google-charts">
+
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="students">...</div>
+              <div role="tabpanel" class="tab-pane fade" id="teachers">...</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </aside>
-    <!--Contenido de la Página-->
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="#" class="thumbnail">
-              <h1 class="text-center">Enrollment</h1>
-                <div class="number-box"><span id="total"></span># students currently enrolled</div>
-                <div class="number-box desercion"> <span id="porcentaje"></span>%dropout</div>
-                <div class="box-google-charts">
-                  <div id="chart_div_enrollment"></div>
-                </div>
-            </a>
-          </div>
-          <div class="col-xs-12">
-            <a href="#" class="thumbnail">
-              <h1 class="text-center">Achievement</h1>
-                <div class="number-box"> <span id="meta"></span>#students that meet the target</div>
-                <div class="number-box"> <span id="prctmeta"></span>% of total</div>
-                <div class="box-google-charts"><div id="donutchart" style="width: 100%; height: 200px;"></div></div>
-            </a>
-          </div>
-          <div class="col-xs-12">
-            <a href="#" class="thumbnail">
-              <h1>net promoter score</h1>
-                <div class="number-box"> <span id="nps"></span>%cumulative nps</div>
-                <div class="numberDos-box"> <span id="nps-porciento">porcentajes</span></div>
-                <div class="box-google-charts">
-                  <div id="chart_div_nps"></div>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="#" class="thumbnail">
-
-            </a>
-          </div>
-          <div class="col-xs-12">
-            <a href="#" class="thumbnail">
-
-            </a>
           </div>
         </div>
       </div>
     </section>
-    <div class="content-wrapper" id="paginaView" class="enabled">
-
-        <section>
-            <div class="container">
-          <!--Grafico del medio-->
-              <div class="box-graphics">
-                <div class="sprintfiltro">
-                  <span>TECH SKILLS</span>
-                  <select class="sprintFiltro" id="sprintFiltroTech">
-                      <option value="0">Sprint 1</option>
-                      <option value="1">Sprint 2</option>
-                      <option value="2">Sprint 3</option>
-                      <option value="3">Sprint 4</option>
-                  </select>
-                </div>
-                  <div class="data-number-list"> <span class="box-number" id="totalTechSprint"></span># students that meet the target</div>
-                  <div class="data-number-list"> <span class="box-number" id="prctTechSprint"></span>% of total</div>
-                  <div class="caja2">
-                    <div id="chart_div_techs" style="width: 100%; height: 200px;"></div>
-                  </div>
-              </div>
-              <div class="box-graphics">
-                <div class="sprintfiltro">
-                  <span>LIFE SKILL</span>
-                  <select class="sprintFiltro" id="sprintFiltroHse">
-                    <option value="0">Sprint 1</option>
-                    <option value="1">Sprint 2</option>
-                    <option value="2">Sprint 3</option>
-                    <option value="3">Sprint 4</option>
-                  </select>
-                </div>
-                  <div class="data-number-list"> <span class="box-number" id="totalHseSprint"></span>#overall class average</div>
-                  <div class="data-number-list"> <span class="box-number" id="prctHseSprint"></span>% of students that meet the target</div>
-                  <div class="caja2">
-                    <div id="chart_div_hse" style="width: 100%; height: 500px;"></div>
-                  </div>
-              </div>
-              <div class="box-data-students">
-                <h1>Student satifaction</h1>
-                  <div class="number-box"> <span id="box-expectativa"></span>% meeting of excceding expectations</div>
-                  <div class="box-google-charts">
-                    <div id="columnchart_student_satisfation"></div>
-                  </div>
-              </div>
-              <div class="box-data-students">
-                <h1>teacher rating</h1>
-                  <div class="number-box"> <span id="box-teacher"></span>overall teacher rating</div>
-                  <div class="box-google-charts">
-                    <div id="columnchart_teacher_rating"></div>
-                  </div>
-              </div>
-              <div class="box-data-students">
-                <h1>jedi master rating</h1>
-                  <div class="number-box"> <span id="box-jedi"></span>overall jedi rating</div>
-                  <div class="box-google-charts">
-                    <div id="columnchart_jedi_rating"></div>
-                  </div>
-              </div>
-            </div>
-        </section>
-    </div>
-    <div class="disabled" id="paginaStudents">
-        <!--estructura de la section students-->
-        <div class="colum-left">
-           <div id ="listCity" class="list-city">
-             <ul>
-                 <li class="capital-letter">lima</li>
-                 <li class="capital-letter"><a id ="lima20162"href=""></a>2016 ii</li>
-                 <li class="capital-letter"><a id ="lima20171"href=""></a>2017 i</li>
-                 <li class="capital-letter"><a id ="lima20172"href=""></a>2017 ii</li>
-             </ul>
-             <ul>
-                 <li class="capital-letter">arequipa</li>
-                 <li class="capital-letter"><a id="arequipa20162" href=""></a>2016 ii</li>
-                 <li class="capital-letter"><a id="arequipa20171" href=""></a>2017 i</li>
-             </ul>
-             <ul>
-                 <li class="capital-letter">santiago de chile</li>
-                 <li class="capital-letter"><a id="chile20162" href=""></a>2016 ii</li>
-                 <li class="capital-letter"><a id="chile20171"href=""></a>2017 i</li>
-                 <li class="capital-letter"><a id="chile20172"href=""></a>2017 ii</li>
-             </ul>
-             <ul>
-                 <li class="capital-letter">ciudad de méxico</li>
-                 <li class="capital-letter"><a id="mexico20171" href=""></a>2017 i</li>
-                 <li class="capital-letter"><a id="mexico20172"href=""></a>2017 ii</li>
-             </ul>
-
-         </div>
-      </div>
-      <div  id="colum-right" class="">
-
-      </div>
-    </div>
-
-</div>
-
 
 <!-- Aquí va tus archivos JS -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+<script type="text/javascript" src="vendors/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/app.js"></script>

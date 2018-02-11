@@ -3,41 +3,71 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    overflow: hidden;
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
-/*ESTILOS PARA EL NAV*/
-.nav>li>a>img{
-  padding-right: 0;
-  padding-left: 0;
-}
-nav.navbar.navbar-default{
-  margin-bottom: 0;
-}
-span.glyphicon.glyphicon-envelope{
-  font-size: 20px;
-  padding-left: 2vw;
-}
-ul.nav.nav-tabs.nav-justified{
-  display: inline-flex;
-}
-ul.nav.nav-tabs.nav-justified li{
-  padding-right: 0;
-  padding-left: 0;
-}
-div.container-fluid.style-container-bottom{
-  background-color: #FFD500;
-  padding-bottom: 1.5vh;
-}
-aside{
-  background-color: #2B2B2B;
-}
+/*CLASES REUTILIZABLES*/
 .padding-top-4{
   padding-top: 4.5vh;
 }
 .text-white{
   color: #FFF;
+}
+.padding-0{
+  padding: 0;
+}
+.style-box-yellow{
+  background-color: #FFD500;
+}
+.flex-direction-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.margin-top-99{
+  margin-top: 71px;
+}
+/*ESTILOS PARA EL NAV*/
+nav.navbar.navbar-default{
+  margin-bottom: 0;
+}
+.navbar-lab{
+  padding: 10px 0px;
+}
+span.glyphicon.glyphicon-envelope{
+  font-size: 38px;
+  padding-left: 2vw;
+}
+.logo-lab{
+  width: 195px;
+}
+.logo-ale{
+  width: 48px;
+}
+/*ESTILOS PARA SECCIÓN ASIDE*/
+aside{
+  background-color: #2B2B2B;
+}
+
+/*ESTILOS PARA TABS*/
+ul.nav.nav-tabs{
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.col-xs-12 a{
+  text-decoration: none;
+  color: #000;
+}
+.col-xs-12 a:hover{
+  border: 1px solid #FFD500;
+}
+
+@media (min-width: 768px) {
+  aside.col-sm-4.margin-top-99{
+    height: 90vh;
+    position: fixed;
+    margin-top: 99px;
+  }
+  section{
+    margin-top: 99px;
+  }
 }
